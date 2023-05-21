@@ -10,11 +10,17 @@ const DataSlice = createSlice({
     },
   },
   reducers: {
-    addData: (state, action) => {
-      console.log(action);
+    changeName: (state, action) => {
+      state.dataLists.name = action.payload;
+    },
+    changeUserName: (state, action) => {
+      state.dataLists.userName = action.payload;
+    },
+    changeContent: (state, action) => {
+      state.dataLists.content = action.payload;
     },
   },
 });
 
-export const { addData } = DataSlice.actions;
+export const { changeName, changeUserName, changeContent } = DataSlice.actions;
 export default DataSlice.reducer;

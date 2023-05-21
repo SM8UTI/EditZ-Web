@@ -16,7 +16,9 @@ const MainComponent = () => {
           </div>
           <div className="text">
             <h3>{data.name === undefined ? "Full Name" : data.name}</h3>
-            <span>@{data.userName === undefined ? "userName" : data.name}</span>
+            <span>
+              @{data.userName === undefined ? "userName" : data.userName}
+            </span>
           </div>
         </div>
         <div className="body">
