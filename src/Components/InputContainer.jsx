@@ -14,7 +14,12 @@ const InputContainer = () => {
 
   return (
     <div className={"InputContainer"}>
-      <form autoComplete="false">
+      <form
+        autoComplete="false"
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         <div className="row">
           <label htmlFor="FullName">Full Name</label>
           <input

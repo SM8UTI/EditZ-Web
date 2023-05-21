@@ -3,6 +3,7 @@ import Header from "./Components/Header";
 import InputContainer from "./Components/InputContainer";
 import Container from "./Components/Container";
 import MainComponent from "./Components/MainComponent";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <MainComponent />
         </div>
       </Container>
+      <Footer />
     </>
   );
 };
